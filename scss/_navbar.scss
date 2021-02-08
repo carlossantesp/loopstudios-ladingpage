@@ -1,0 +1,38 @@
+.nav {
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  transition: left 0.25s;
+  &.active {
+    left: 0;
+  }
+}
+.brand,
+.menu__icon {
+  z-index: 1;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  &__item {
+    display: block;
+    padding: 1rem;
+  }
+  &__link {
+    font-family: var(--fontSans);
+    font-weight: var(--ligth);
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    color: var(--white);
+    display: block;
+  }
+}

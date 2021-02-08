@@ -1,0 +1,12 @@
+html {
+  box-sizing: border-box;
+  font-family: var(--fontAtlanta);
+  font-size: var(--size-base);
+  color: var(--black);
+  font-weight: var(--normal);
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

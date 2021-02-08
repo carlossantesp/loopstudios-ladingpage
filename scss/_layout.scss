@@ -1,0 +1,21 @@
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.main,
+.container,
+.footer {
+  padding: 1.5rem;
+}

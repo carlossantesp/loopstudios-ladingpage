@@ -4,17 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Loopstudios landing page</title>
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <header class="header">
-    <div class="brand">
-      <a href="#" class="brand__logo">
-        <img src="./images/logo.svg" alt="Logo Loopstudios">
-      </a>
+  <main class="main">
+    <header class="header">
+      <div class="brand">
+        <a href="#" class="brand__logo">
+          <img src="./images/logo.svg" alt="Logo Loopstudios">
+        </a>
+      </div>
       <div class="menu__icon">
-        <img src="./images/icons/icon-hamburger.svg" alt="Menu">
-        <img class="hidden" src="./images/icons/icon-close.svg" alt="Close">
+        <img class="open" src="./images/icons/icon-hamburger.svg" alt="Menu">
+        <img class="close hidden" src="./images/icons/icon-close.svg" alt="Close">
       </div>
       <nav class="nav">
         <ul class="menu">
@@ -25,9 +28,7 @@
           <li class="menu__item"><a class="menu__link" href="#">Support</a></li>
         </ul>
       </nav>
-    </div>
-  </header>
-  <main class="main">
+    </header>
     <section class="hero">
       <picture class="hero__img">
         <source media="(min-width: 992px)" srcset="./images/desktop/image-hero.jpg">
@@ -39,7 +40,8 @@
         </h1>
       </div>
     </section>
-
+  </main>
+  <div class="container">
     <section class="info">
       <picture class="info__img">
         <source media="(min-width: 992px)" srcset="./images/desktop/image-interactive.jpg">
@@ -61,7 +63,7 @@
     <section class="creations">
       <h3 class="creations__title">Our creations</h3>
       <div class="creations__btn">
-        <a href="#" class="btn btn--primary">See all</a>
+        <a href="#" class="btn">See all</a>
       </div>
       <div class="creations__grid">
         <div class="card">
@@ -123,7 +125,7 @@
 
       </div>
     </section>
-  </main>
+  </div>
   <footer class="footer">
     <div class="footer__logo">
       <a href="#" class="logo__link">

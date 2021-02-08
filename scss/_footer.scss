@@ -1,0 +1,49 @@
+.footer {
+  padding: 3.5rem 1rem;
+  background-color: var(--black);
+  display: grid;
+  grid-template-areas: "logo" "links" "sociales" "copy";
+  gap: 1rem;
+  &__logo {
+    grid-area: logo;
+    padding: 0 5rem;
+  }
+  &__social {
+    grid-area: sociales;
+  }
+  &__links {
+    grid-area: links;
+  }
+  &__copy {
+    grid-area: copy;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  &__item {
+    display: block;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+  }
+  &__link {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--white);
+    display: block;
+  }
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item {
+    margin: 0 0.5rem;
+  }
+}
+.copy {
+  color: var(--dark-gray);
+  text-align: center;
+  font-size: 1.125rem;
+}

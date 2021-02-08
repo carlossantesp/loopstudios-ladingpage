@@ -1,0 +1,25 @@
+.info {
+  margin-top: var(--space-section);
+  display: grid;
+  grid-template-areas: "image" "description";
+  gap: 1rem;
+  &__img {
+    grid-area: image;
+  }
+  &__description {
+    grid-area: description;
+    text-align: center;
+  }
+  &__title {
+    font-family: var(--fontSans);
+    font-weight: var(--ligth);
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  &__information {
+    color: var(--dark-gray);
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+}
