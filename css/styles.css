@@ -7,7 +7,7 @@
   --fontAtlanta: "Alata", sans-serif;
   --fontSans: "Josefin Sans", sans-serif;
   --size-base: 15px;
-  --size-hero-title: 2.75rem;
+  --size-hero-title: 2.5rem;
   --w-hero-content: 28rem;
   --normal: 400;
   --ligth: 300;
@@ -487,8 +487,7 @@ img {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: logo;
-  padding: 0 5rem;
-  width: 25rem;
+  width: 15rem;
   margin: 0 auto;
 }
 
