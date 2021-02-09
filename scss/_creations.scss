@@ -24,6 +24,17 @@
   &__btn {
     display: block;
   }
+  @media screen and (min-width: 992px) {
+    grid-template-areas: "title title boton" "grilla grilla grilla";
+    align-items: center;
+    text-align-last: left;
+    &__btn {
+      justify-self: flex-end;
+    }
+    &__grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 }
 
 .btn {
@@ -35,7 +46,12 @@
   border: 1px solid var(--black);
   transition: all 0.25s;
   &:hover {
+    cursor: pointer;
     background-color: var(--black);
     color: var(--white);
+  }
+  @media screen and (min-width: 992px) {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
   }
 }

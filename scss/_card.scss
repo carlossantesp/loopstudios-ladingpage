@@ -1,9 +1,15 @@
 .card {
   position: relative;
-  min-height: 9rem;
+  min-height: var(--card-height);
   display: flex;
   align-items: flex-end;
   color: var(--white);
+  transition: all 0.25s;
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--very-dark-gray);
+  }
   &__img {
     position: absolute;
     top: 0;
@@ -33,5 +39,11 @@
     text-align: left;
     font-family: var(--fontSans);
     margin-bottom: 0.85rem;
+  }
+  @media screen {
+    &__info {
+      padding-left: 2rem;
+      padding-bottom: 1rem;
+    }
   }
 }

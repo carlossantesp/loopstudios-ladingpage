@@ -7,8 +7,21 @@
   --fontSans: "Josefin Sans", sans-serif;
   --size-base: 15px;
   --size-hero-title: 2.75rem;
+  --w-hero-content: 28rem;
   --normal: 400;
   --ligth: 300;
 
   --space-section: 5rem;
+
+  --head-hero: 100vh;
+  --card-height: 9rem;
+
+  @media screen and (min-width: 768px) {
+    --head-hero: 90vh;
+  }
+  @media screen and (min-width: 992px) {
+    --card-height: 30rem;
+    --size-hero-title: 4rem;
+    --w-hero-content: 40rem;
+  }
 }

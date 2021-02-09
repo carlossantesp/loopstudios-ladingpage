@@ -22,4 +22,24 @@
     font-size: 1.125rem;
     line-height: 1.5;
   }
+
+  @media screen and (min-width: 992px) {
+    grid-template-areas: "image description";
+    grid-template-columns: 2fr 1fr;
+    position: relative;
+    &__description {
+      background-color: var(--white);
+      position: absolute;
+      left: -10rem;
+      bottom: 0;
+      padding: 3rem 2rem;
+      text-align: left;
+    }
+    &__title {
+      font-size: 1.85rem;
+    }
+    &__information {
+      font-size: 0.85rem;
+    }
+  }
 }

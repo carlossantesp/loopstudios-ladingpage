@@ -1,12 +1,16 @@
 .footer {
   padding: 3.5rem 1rem;
   background-color: var(--black);
-  display: grid;
-  grid-template-areas: "logo" "links" "sociales" "copy";
-  gap: 1rem;
+  .container {
+    display: grid;
+    grid-template-areas: "logo" "links" "sociales" "copy";
+    gap: 1rem;
+  }
   &__logo {
     grid-area: logo;
     padding: 0 5rem;
+    width: 25rem;
+    margin: 0 auto;
   }
   &__social {
     grid-area: sociales;
@@ -16,6 +20,23 @@
   }
   &__copy {
     grid-area: copy;
+  }
+  @media screen and (min-width: 992px) {
+    .container {
+      grid-template-areas: "logo sociales" "links copy";
+      grid-template-columns: 2fr 1fr;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__logo {
+      width: 100%;
+      padding: 0 24rem 0 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__logo {
+      padding: 0 35rem 0 0;
+    }
   }
 }
 
@@ -33,6 +54,20 @@
     color: var(--white);
     display: block;
   }
+  @media screen and (min-width: 992px) {
+    flex-direction: initial;
+    gap: 1rem;
+    font-size: 1rem;
+    &__item {
+      padding: 0;
+      margin: 0;
+      padding-bottom: 0.5rem;
+      transition: border 0.25s;
+      &:hover {
+        border-bottom: 3px solid var(--white);
+      }
+    }
+  }
 }
 .socials {
   display: flex;
@@ -40,10 +75,22 @@
   align-items: center;
   &__item {
     margin: 0 0.5rem;
+    padding-bottom: 0.25rem;
+    transition: border 0.2s;
+    &:hover {
+      border-bottom: 2px solid var(--white);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    justify-content: flex-end;
   }
 }
 .copy {
   color: var(--dark-gray);
   text-align: center;
   font-size: 1.125rem;
+  @media screen and (min-width: 992px) {
+    font-size: 1rem;
+    text-align: right;
+  }
 }
